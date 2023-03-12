@@ -1,12 +1,20 @@
 
 
 .Phonetic .fa-volume-up {
-  border: 1px solid grey;
+  
+ border: 1px solid grey;
   border-radius: 50px;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 9px;
+  margin:5px 10px;
+
+
 }
 
 .Phonetic .fa-volume-up:hover {
   cursor: pointer;
 }
+
+    
+   
+    
