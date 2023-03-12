@@ -7,12 +7,16 @@
   font-size: 16px;
   padding: 10px 9px;
   margin:5px 10px;
+  transition:all 150ms ease-in-out;
 
 
 }
 
 .Phonetic .fa-volume-up:hover {
   cursor: pointer;
+  background:#333;
+  color:white;
+
 }
 
     
