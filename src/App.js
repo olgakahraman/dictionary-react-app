@@ -15,7 +15,7 @@ import './App.css';
       </main>
 
 
-      <footer className = "App-footer"><small>Coded by Olga D Kahraman</small></footer>
+      <footer className = "App-footer"><small>Coded by Olga Dietiuk Kahraman</small></footer>
       </div>
     </div>
   );
