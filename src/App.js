@@ -11,7 +11,7 @@ import './App.css';
       </header>
 
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="sunset" />
       </main>
 
 
