@@ -11,7 +11,7 @@ export default function App() {
           <Dictionary defaultKeyword="countryside" />
         </main>
 
-        <footer className="App-footer">
+        <footer className="App-footer m-4">
           <small>
             This project was coded by Olga Dietiuk Kahraman - 2023 and it is{" "}
             <a
