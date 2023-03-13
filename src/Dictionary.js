@@ -19,17 +19,14 @@ export default function Dictionary(props) {
   }
 
   function search() {
-    // documentation: https://dictionaryapi.dev/e
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleDictionaryResponse);
-
-    let pexelsApiKey =
-      "OZFCzLBObEhgBr8lJpkJbXBrJef0MUHH9kcPDMwJF9NIm7VzT6QUAojV";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiURL).then(handleDictionaryResponse);
+    let pexelApiKey =
+      "Q4MMFsOMnY6ZxeFvxwdRmDeVaI4wcpO5zMYI4u3VDpgNlEUIitNsiI05";
+    let pexelApiURL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    let headers = { Authorization: `${pexelApiKey}` };
+    axios.get(pexelApiURL, { headers: headers }).then(handlePexelsResponse);
   }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -47,7 +44,7 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <h1 className="text-center m-5">DICTIONARY</h1>
+        <h1 className="text-center m-3">DICTIONARY</h1>
         <section>
           <h3>What word would you like to look up?</h3>
           <form onSubmit={handleSubmit}>
