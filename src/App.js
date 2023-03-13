@@ -18,6 +18,7 @@ export default function App() {
               href="https://github.com/olgakahraman/dictionary-react-app"
               target="_blank"
               title="GitHub"
+              rel="noopener noreferrer"
             >
               open-sourced on GitHub
             </a>
